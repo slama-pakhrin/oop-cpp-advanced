@@ -1,0 +1,57 @@
+Script started on Sun 01 Oct 2023 02:24:08 AM EDT
+==7417== Memcheck, a memory error detector
+==7417== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==7417== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==7417== Command: ws
+==7417== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Command Line Arguments:
+---------------------------------
+  1: ws
+---------------------------------
+
+1. Book tester >>> ===========================================================
+total books: 6
+------------------------------------------------------------------------------
+| 1.| Software Architecture for Busy Developers               ,7,174 | (24.857143) ||
+| 2.| Low-Code Application Development with Appian            ,16,462 | (28.875000) ||
+| 3.| Natural Language Processing with TensorFlow             ,11,514 | (46.727273) ||
+| 4.| Learning DevOps                                         ,17,560 | (32.941176) ||
+| 5.| SQL for Data Analytics                                  ,9,540 | (60.000000) ||
+| 6.| Deciphering Object-Oriented Programming with C++        ,21,594 | (28.285714) ||
+============================================================== <<< Book tester
+
+2. Collection tester for int and 10 >>> ======================================
+(smallest,largest) items: (0,35)
+size/capacity: 7/10
+Contents: 25, 30, 20, 15, 25, 5, 35========================================= <<< Collection tester for int and 10
+
+3. Collection tester for double and 10 >>>====================================
+(smallest,largest) items: (0.000000,9.100000)
+size/capacity: 6/10
+Contents: 7.800000, 9.100000, 3.400000, 1.200000, 2.300000, 6.700000====================================== <<< Collection tester for double and 10
+
+4. Collection tester for Book and 10 >>> =====================================
+[After creating collection in empty state]
+Book with smallest pages-to-chapters ratio (initial-default state): 
+|                                                         ,0,0 | (-nan) | |
+Book with largest pages-to-chapters ratio (initial-deault-state): 
+|                                                         ,0,0 | (-nan) | |
+size/capacity: 0/10
+======================================== <<< Collection tester for Book and 10
+
+
+[38;5;9m------------------------
+End Testing the Program![0m
+==7417== 
+==7417== HEAP SUMMARY:
+==7417==     in use at exit: 0 bytes in 0 blocks
+==7417==   total heap usage: 11 allocs, 11 frees, 74,134 bytes allocated
+==7417== 
+==7417== All heap blocks were freed -- no leaks are possible
+==7417== 
+==7417== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Sun 01 Oct 2023 02:24:09 AM EDT

@@ -1,0 +1,33 @@
+/****************************************************
+Workshop 4 part 2
+
+Name : Salon Lama Pakhrin
+Email : slama-pakhrin@myseneca.ca
+ID : 160535217
+Date: Oct 6
+
+I have done all the coding by myself and only
+copied the code that my professor provided to 
+complete my workshops and assignments.
+
+****************************************************/
+
+After finishing this workshop, I have a better understanding of composition and aggregation. 
+The distinction between composition and aggregate implementations, particularly in the 
+context of the classes CheeseShop and CheeseParty, was one of the most important lessons learned.
+Both CheeseShop and CheeseParty in this workshop have attributes of type const Cheese**, but they 
+have various connections to the class Cheese. CheeseParty exemplifies aggregation since it just 
+retains references to Cheese objects, whereas CheeseShop exemplifies composition because it directly 
+owns the Cheese objects. This difference is important because, in composition, the lifespan of Cheese 
+objects is constrained by the lifetime of the CheeseShop, whereas, in aggregation, Cheese objects are 
+free to exist on their own.
+Also, the implementations for the move and copy functions vary based on composition and aggregation. 
+While the move function frequently only repeats references in aggregate, it typically changes ownership 
+of resources in composition.
+The implementation of the addCheese functions varies between CheeseShop and CheeseParty. While CheeseParty 
+provides a reference to an already existing Cheese object, CheeseShop immediately creates and adds a Cheese 
+object to its internal collection.
+In conclusion, this workshop helped me better grasp composition and aggregation, how these concepts 
+affect ownership and resource management, and how various functions are carried out in these settings. 
+CheeseShop doesn't have a removeCheese method, which made me think about how to add one and possible 
+project modifications.

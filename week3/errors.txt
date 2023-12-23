@@ -1,0 +1,12 @@
+Book.cpp: In member function ‘std::ostream& sdds::Book::print(std::ostream&) const’:
+Book.cpp:14:24: error: ‘setw’ is not a member of ‘std’
+   14 |             os << std::setw(56) << m_title << "," << m_numChapters << "," << m_numPages
+      |                        ^~~~
+Book.cpp:4:1: note: ‘std::setw’ is defined in header ‘<iomanip>’; did you forget to ‘#include <iomanip>’?
+    3 | #include "Book.h"
+  +++ |+#include <iomanip>
+    4 | 
+Book.cpp:15:48: error: ‘setprecision’ is not a member of ‘std’
+   15 |                << " | (" << std::fixed << std::setprecision(6) << static_cast<double>(m_numPages) / m_numChapters << ")";
+      |                                                ^~~~~~~~~~~~
+Book.cpp:15:48: note: ‘std::setprecision’ is defined in header ‘<iomanip>’; did you forget to ‘#include <iomanip>’?
