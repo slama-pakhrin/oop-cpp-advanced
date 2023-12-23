@@ -1,0 +1,40 @@
+/****************************************************
+Workshop 6
+
+Name : Salon Lama Pakhrin
+Email : slama-pakhrin@myseneca.ca
+ID : 160535217
+Date: Oct 28
+
+I have done all the coding by myself and only
+copied the code that my professor provided to 
+complete my workshops and assignments.
+
+****************************************************/
+
+As always, this workshop also demonstrates the importance of deallocating
+dynamically allocated memory when working with a container like 
+vector. In our case, the workshop used a std::vector<sdds::Resource*> 
+to store pointers to Resource objects. To prevent memory leaks, it's 
+imperative to delete each dynamically allocated Resource object before
+the vector goes out of scope, ensuring efficient resource utilization.
+
+I now know how to use the vector container to manage polymorphic 
+objects efficiently, allowing for the flexible handling of different 
+object types inside of a single data structure. Furthermore, I can now 
+transfer dynamically allocated objects inside containers with ease, 
+maximising resource usage and memory management with the help of smart 
+pointers and move semantics. Range-based iteration has been one of the
+most useful technique which makes traversing container items easier 
+while lowering the risk of errors.Also, The dynamic_cast operation was 
+instrumental in verifying the pointer's derived type before calling the 
+corresponding functions, effectively preventing runtime errors.
+Additionally, I learned the significance of choosing between 
+std::vector<sdds::Resource*> and std::vector<sdds::Resource>. The former 
+was necessary to support polymorphism and enable the storage of objects 
+with distinct functionalities such as Directory and File. Opting for 
+std::vector<sdds::Resource> would have led to slicing, resulting in the 
+loss of specialized functionality.
+
+To sum up everything so far, this workshop has made me very familiar with 
+STL containers, mainly with vector and everything aroud the container. 
