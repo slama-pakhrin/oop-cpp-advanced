@@ -1,0 +1,33 @@
+/****************************************************
+Workshop 5 part 2
+
+Name : Salon Lama Pakhrin
+Email : slama-pakhrin@myseneca.ca
+ID : 160535217
+Date: Oct 12
+
+I have done all the coding by myself and only
+copied the code that my professor provided to 
+complete my workshops and assignments.
+
+****************************************************/
+
+In this worshop, distinguishing between functors and lambda expressions was one key takeaway. 
+I learned that functors are essentially function call operator overloads residing within a class 
+as member functions, whereas lambda expressions are anonymous, nameless functors. Generally, lambda expressions 
+are preferred due to their simplicity, except in instances where a function is employed in 
+multiple locations or is extensive, where functors prove to be a more apt choice. Furthermore, 
+the constructor for the SpellChecker class raises an exception if it encounters difficulties 
+opening a file, such as when the file name is incorrect or the file doesn't exist. To mitigate 
+the exception, a client-centric approach can be adopted, shifting the responsibility of ensuring 
+successful file access to the client. This way, the program can promptly report errors back to 
+the client, empowering them to address and rectify any issues.
+
+Two approaches come to mind for reducing redundant code in the Movie and Book classes. Making an 
+abstract base class from which both classes can inherit common logic is one strategy. As an alternative, 
+the use of parametric polymorphism via templates can be utilised to develop flexible functions that have 
+the same logic while supporting different object types. Last but not least, default constructors are 
+essential since they make instantiating member variables simpler and increase programme security. 
+As demonstrated in this workshop, the use of default member initializers supports clear and concise code 
+and strengthens class security, making them an important addition to the class declaration.
+

@@ -1,0 +1,7 @@
+w5_p1.cpp: In function ‘int main(int, char**)’:
+w5_p1.cpp:110:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  110 |     for (auto& book : library)
+      |     ^~~
+w5_p1.cpp:114:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  114 |         std::cout << "-----------------------------------------\n";
+      |         ^~~
