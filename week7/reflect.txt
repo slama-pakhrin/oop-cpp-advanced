@@ -1,0 +1,31 @@
+/****************************************************
+Workshop 7
+
+Name : Salon Lama Pakhrin
+Email : slama-pakhrin@myseneca.ca
+ID : 160535217
+Date: Nov 10
+
+I have done all the coding by myself and only
+copied the code that my professor provided to 
+complete my workshops and assignments.
+
+****************************************************/
+
+In this workshop, I deepened my comprehension of vectors and gained familiarity with various functions from the algorithm and numeric libraries. I received valuable assistance from several STL functions, including:
+
+Utilizing for_each: I employed this function to iterate through my songs vector and exhibit the songs systematically. The advantages of using for_each are manifold, as it leads to more organized and efficient code when working with vectors and lists. It condenses the code into a single line, enhancing clarity and reducing the likelihood of human error.
+
+Employing accumulate: I harnessed this function to calculate the total length of the songs, thereby determining the overall listening time for the collection. The traditional approach would involve manually iterating through the vector and performing the calculations. With std::accumulate, the purpose of the function is evident, obviating the need to decipher extensive code.
+
+Leveraging sort: I called upon this function to sort my collection based on the field specified. Using sort significantly streamlines the sorting process compared to crafting a custom sorting algorithm, such as bubble sort. This function minimizes the potential for human error and results in more concise code.
+
+Employing transform: I applied this function to modify the representation of songs with nonexistent albums, transforming "[None]" into an empty string. This concise approach enhances user experience and maintains code brevity.
+
+Employing any_of: I made use of this function to ascertain whether at least one instance of an artist's name exists in the songs collection. This is a more efficient and succinct alternative to manual iteration, improving code readability.
+
+Utilizing count_if: I harnessed this function to count the occurrences of artists with a specific name in the song collection. std::count_if simplified the task of determining the list's size and avoided the need for extensive manual loops.
+
+Applying copy_if: I employed this function to replicate songs performed by a specific artist and store them in a new list. This streamlined process condenses what would otherwise be a lengthier procedure when employing manual loops.
+
+Furthermore, the incorporation of try-catch blocks provides a robust mechanism for error handling, safeguarding against user-input errors. These blocks promptly detect and communicate errors when clients provide invalid inputs or make typographical errors, facilitating clear error diagnosis for users.
