@@ -1,0 +1,21 @@
+/****************************************************
+Workshop 8 
+
+Name : Salon Lama Pakhrin
+Email : slama-pakhrin@myseneca.ca
+ID : 160535217
+Date: Nov 15
+
+I have done all the coding by myself and only
+copied the code that my professor provided to 
+complete my workshops and assignments.
+
+****************************************************/
+
+I learned about the meaning, application, and syntax of smart pointers as well as their clear advantages over raw pointers by delving into their complex universe. On the heap, smart pointers like std::unique_ptr and std::shared_ptr automate the memory allocation and deallocation processes. This is in sharp contrast to raw pointers, which have no owner assigned to ensure correct release, meaning we have to take an active role in memory management when their lifecycle ends. Using smart pointers has many benefits, one of which is that they help ensure safe exception handling by averting potential memory leaks that could occur when using raw pointers in throw exception cases. One key component in preventing such memory leaks is smart pointers' automated object deletion.
+
+During the investigation, issues of practical concern emerged in addition to the theoretical understanding of smart pointers. For example, in the context of output object duplication, a relevant substitute was addressed to mitigate the problem of over-redundancy. A more efficient method avoids the creation of duplicate objects by adding pointers straight into the result database instead of making new objects for every approved profile. But careful consideration of object ownership and lifetime is necessary for the efficient administration of these pointers, highlighting the subtleties of using smart pointers in practical situations.
+
+In addition, one of the most important aspects of using smart pointers is their syntax, which is very different from that of raw pointers. Smart pointers require the explicit invocation of their constructor, in contrast to raw pointers, where initialization is handled implicitly by the assignment operator. In the Profile class, this is most clear in expressions like database.push_back(std::move(*item)); where the lack of an explicit move constructor may have unexpected repercussions, possibly using the copy constructor instead. This emphasises how crucial it is to provide explicit move constructors when working with smart pointers in order to handle object transfers correctly and prevent accidental duplication.
+
+To sum up, smart pointers such as std::unique_ptr and std::shared_ptr provide a clear and dependable way to manage memory. By automating memory allocation and deallocation, they ensure safer exception handling, stop memory leaks, and reduce the hazards associated with raw pointers. The strategic importance of integrating smart pointers for more efficient and maintainable code is further highlighted by the subtle syntax and practical considerations.
