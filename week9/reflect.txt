@@ -1,0 +1,23 @@
+/****************************************************
+Workshop 9
+
+Name : Salon Lama Pakhrin
+Email : slama-pakhrin@myseneca.ca
+ID : 160535217
+Date: Nov 24
+
+I have done all the coding by myself and only
+copied the code that my professor provided to 
+complete my workshops and assignments.
+
+****************************************************/
+
+In the course of this workshop, I engaged in a comprehensive exploration of file handling and encryption methodologies, acquiring practical proficiency in manipulating both text and binary file formats. The deliberate choice of storing encrypted data in binary files was motivated by the imperative of fortifying the security of sensitive information. Unlike text files, which are susceptible to easy manipulation, binary files, characterized by their non-human-readable nature, afford an additional stratum of protection.
+
+The pivotal role played by the converter() function in the encryption process was underscored, with the utilization of std::bind to construct the thread template emerging as an elegant means of enhancing code clarity and optimizing the invocation of the converter() function within the context of multi-threading.
+
+A salient learning outcome of the workshop was the strategic deployment of multiple threads to expedite the encryption of substantial datasets. The decomposition of the text file into smaller units, each processed concurrently by distinct threads, exemplified the efficacy of leveraging contemporary multi-core processors for performance optimization. The instantiation and orchestration of a vector of std::threads, culminating in the subsequent synchronization through thread joining, elucidated the critical importance of meticulous coordination in the parallel execution of threads to uphold program integrity.
+
+Furthermore, the workshop expanded my proficiency in file manipulation through the introduction of binary mode operations. The ability to compose and decipher sets of numbers in binary mode augmented my repertoire of file input/output operations, furnishing a pragmatic foundation for dealing with diverse data formats.
+
+In summation, this workshop not only served to fortify foundational principles in file handling but also introduced advanced techniques, including multi-threading and function binding. Such competencies are of considerable significance in real-world programming scenarios, where considerations of efficiency, security, and code robustness are paramount.
